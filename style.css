@@ -96,8 +96,8 @@ body{
 /*-- Ubicacion imagenes inicio--*/
 
 .espacioImagenes{
-    width: 400px; 
-    height: 600px;
+    width: 100vh; 
+    height: 45vw;
 }
 
 .berlin{
@@ -221,6 +221,8 @@ body{
     display: inline-block;
     padding-top: 1rem;
 }
+
+
 
 /*--Footer fin--*/
 
@@ -426,3 +428,12 @@ body{
 }
 
 /*--Sobre Nosotros fin--*/ 
+
+
+
+
+#contacto2{
+    align-items: center;
+    justify-items: center;
+    justify-content: center
+}
