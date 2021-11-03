@@ -189,7 +189,7 @@ body{
     display: flex;
     justify-content: center;
 }
-/*--Footer fin--*/
+
 
 .footer__flexContainer{
     display: flex;
@@ -222,6 +222,7 @@ body{
     padding-top: 1rem;
 }
 
+/*--Footer fin--*/
 
 /*--Paginas Berlin inicio--*/ 
 
@@ -235,7 +236,7 @@ body{
 }
 
 .contenedor-imagen{
-    width: 45%;
+    width: 40%;
     background-olor: yellowgreen; /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/ 
     display: flex;
     justify-content: center;  
