@@ -1,0 +1,50 @@
+.BarraFondoFooter{
+    background-color: rgba(37, 37, 37, 0.1); 
+    padding: 0.3%;  
+    text-align: center;
+    width: 100%;
+}
+
+.logo{height: 10vh;}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__flexContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: rgba(221, 219, 219,0.8);
+    padding: 1rem;
+    
+}
+
+.footer__flexContainer li{
+    margin: 5px;
+    padding: 2px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+.footer__flexContainer h4{
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.siguenosFooter{text-decoration: none;}
+.siguenosFooter li{
+    display: inline-block;
+    padding-top: 1rem;
+}

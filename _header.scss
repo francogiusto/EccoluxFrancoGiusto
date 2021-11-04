@@ -1,0 +1,62 @@
+.flex-container{
+    margin-left: 20vh;
+    margin-right: 20vh;
+    display: flex;
+    padding: 10px;
+    flex-wrap: nowrap;
+    justify-content:space-evenly
+}    
+
+.flex-container li,a    {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: black; 
+   
+}
+
+.menuSuperior{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:center;
+    overflow: hidden;
+    padding-top: 3vh;
+    list-style: none;
+}
+
+.menuSuperior li{
+    display: inline-block;
+    width: 13%;
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+}
+
+.submenu li{
+    display: block;
+}
+
+.menuSuperior li:hover .submenu{
+    display: block;
+}
+
+.header__navbar--principal{
+    padding: 10vh;
+    list-style: none;
+}
+
+.header__navbar--principal li{
+    display: inline-block;
+}
+
+.header__navbar--principal a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+}
