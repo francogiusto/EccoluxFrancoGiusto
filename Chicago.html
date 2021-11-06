@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eccolux</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a2d4d2f619.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,179 +15,225 @@
 
 <body class="fondo">
    
-        <!--Inicio Header-->
+       <!--Inicio Header-->
 
-        <Header class="Header">
-      
-          <h1 class="header__titulo">Eccolux</h1>
-     
-          <hr>
-     
-         <div>
-             <Nav>
-               <ul class="flex-container">
-                  <div><li> <a href="#"></a> Productos  
-                    <ul class="submenu"> 
-                      <li><a href="Berlin.html">Berlin</a></li>
-                      <li><a href="Roma.html">Roma</a> </li>
-                      <li><a href="Chicago.html">Chicago</a> </li>
-                      <li><a href="Sidney.html">Sidney</a></li>
-                      <li><a href="Barcelona.html">Barcelona</a></li>
-                    </ul>
-                   </li></div>
-                  <div><li><a href="Contacto.html">Contacto</a> </li></div>
-                  <div><li><a href="index.html">Home</a> </li></div>
-                  <div><li><a href="Sobre_nosotros.html">Sobre nosotros</a> </li></div>
-                  <div><li><a href="Mi_compra">Compra</a></li></div>
-               </ul>
-             </Nav>
-         </div>
-      </Header>
- 
-     <!--Fin Header-->
+  <Header class="Header">
+
+    <h1 class="header__titulo">Eccolux</h1>
+
+    <hr>
+
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown pe-5 me-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink bg" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Berlin.html">Berlin</a></li>
+                  <li><a class="dropdown-item" href="Roma.html">Roma</a></li>
+                  <li><a class="dropdown-item" href="Chicago.html">Chicago</a></li>
+                  <li><a class="dropdown-item" href="Barcelona.html">Barcelona</a></li>
+                  <li><a class="dropdown-item" href="Sidney.html">Sidney</a></li>
+                </ul>
+              </li>
+              <li class="nav-item pe-5 me-5">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ps-5 ms-5">
+                <a class="nav-link" href="Sobre_nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item ps-5 ms-5">
+                <a class="nav-link" href="#">Compra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </Header>
+
+  <!--Fin Header-->
     
-    <!--Inicio Main-->
+     <!--Inicio Main-->
+  <main>
 
-    <Main>
-
-      <section class="espacioMain">
-        <div class="contenedor-imagen--chicago">
-          <img src="./img/Chicago.png" alt="Lampara Chicago">
+    <section class="row espacioMain ">
+       
+        <div class="col-sm-12 col-lg-6 container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/CC2.png" class="contenedor-imagen d-block alinear" alt="..."> 
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/CC1.png" class="contenedor-imagen d-block alinear" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/CC3.png" class="contenedor-imagen d-block alinear" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
-        <div class="contenedor-info">
-          <Table class="contenedor-info">
-            <tr>
-              <th class="item">Modelo</th>
-              <td class="descripcion">Chicago</td>
-           </tr>
-            <tr>
-                <th class="item">Precio</th>
-                <td class="descripcion">$10000</td>
-            </tr>
-            <tr>
-                <th class="item">Dimensiones</th>
-                <td class="descripcion">50x20x20</td>
-            <Tr>
-                <th class="item">Materiales</th>
-                <td class="descripcion">Microcemento</td>
-            </Tr>
-            <tr>
-                <th class="item">Diseño</th>
-                <Td class="descripcion">Blablabla</Td>
-            </tr>
-            <tr>
-                <th class="item" >Cantidad</th>
-                <td class="descripcion">
-                    <select name="Cantidad" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                     </select>
-                </td>
-            <tr>
-                <th class="item">Tipo de luz</th>
-                <td class="descripcion">
-                    <select name="Tipo de luz" id="">
-                        <option value="fria">Fria</option>
-                        <option value="calida">Calida</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-              <th>Comprar</th>
-              <td><input type="button" value="Agregar al carrito" class="btnComprar"></td>
-            </tr>
+        <div class="col-sm-12 col-lg-6">
+            <div><h2>Luminaria Chicago ELX</h2></div>
+            <div class="stock"><p>En stock</p></div>
+            <div class="precio"><p>$9900</p></div>
+            <div><p>3 y 6 cuotas sin interes</p></div>
+            <div><p>Envio gratis</p></div>
+            <Table class="contenedor-info">
+                <tr>
+                    <th class="item" >Cantidad</th>
+                    <td class="descripcion">
+                        <select name="Cantidad" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                         </select>
+                    </td>
+                <tr>
+                    <th class="item">Tipo de luz</th>
+                    <td class="descripcion">
+                        <select name="Tipo de luz" id="">
+                            <option value="fria">Fria</option>
+                            <option value="calida">Calida</option>
+                        </select>
+                    </td>
+                </tr>
+            </Table>
+          
+          <div class="espaciado">
+            <input type="button" value="Comprar ahora" class="btnComprar">
+          </div>
+            
+          <div>
+            <p>De diseño esbelto y elegante, esta luminaria es una excelente opcion para alumbrar senderos, accesos, decks y jardines.
+              <ul>
+                <li>Coneccion electrica segura por medio de una caja estanca en su parte inferior</li>
+                <li>Se debe enterrar la parte inferior para lograr estabilidad</li>
+                <li>Portalampara ceramico Gu10</li>
+                <li>Luz led frio/calido a eleccion</li>
+              </ul>
+            </p>
+          </div>
 
-        </Table>
-      </div>
+          <div>
+            <p>Materiales, cemento reforzado con hierro y aditivos, perlas de poliestireno recicladas.</p>
+          </div>
 
-      </section>
-           
-               
-        
-    </Main>
+          <Div><p>Dimensiones 100x25x25.</p></Div>
+            
 
-    <!--Fin Main-->    
+        </div>
 
-    <!--Inicio Footer-->
+     </section>
 
-    <footer class="footer1">
+  </main>
+
+  <!--Fin Main-->
+
+   <!--Inicio Footer-->
+
+   <footer>
+
+    <section class="flx_foo_col">
+
+      <section class="flx_just_cen">
+
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <ul>
+              <li>
+                <a>Local Quintana 241 Mar del Plata,BsAs, Argentina</a>
+              </li>
+              <li>
+                <a>Telefono 432-2421</a>
+              </li>
+              <li>
+                <a>Email:Eccolux@gmail.com</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="recursos">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="*">Terminos de uso</a></li>
+              <li><a href="*">Ayuda</a></li>
+              <li><a href="*">Privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="espacioLogo">
+            <a href="index.html">
+              <img src="./img/LogoE.png" alt="LogoE" class="logo"></a>
+        </div>
+
+        <div class="informacion">
+            <h4>Informacion</h4>
+            <ul class="informacionFooter">
+              <li><a href="Contacto.html">Trabaja con nostros</a></li>
+              <li><a href="Contacto.html">Colaborar</a></li>
+              <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="siguenos">
+            <h4>Siguenos</h4>
+              <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="*"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="*"><i class="fab fa-youtube"></i></a></li>
+        </div>
+
+     </section>
 
       <section>
-        
-       <section class="footer__flexContainer">
- 
-        <div class="">
-           <section>
-             <h4>Contacto</h4>
-             <ul class="">
-                 <li><h5>Local Quintana 241 Mar del Plata,BsAs, Argentina</h5></li>
-                 <li><h5>Telefono 432-2421</h5></Li>
-                 <li><h5>Email:Eccolux@gmail.com</h5></li>
-             </ul>
-           </section>
-         </div> 
-       
-         <div class="">
-           <section>
-             <h4>Recursos</h4>
-             <ul class="">
-                 <li><a href="*">Terminos de uso</a></li>
-                 <li><a href="*">Ayuda</a></li>
-                 <li><a href="*">Privacidad</a></li>
-             </ul>
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             
-                 <a href="index.html">
-                 <img src="./img/LogoE.png" alt="LogoE" class="logo"></a>
-             
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             <h4>Informacion</h4>
-             <ul class="informacionFooter">
-                 <li><a href="Contacto.html">Trabaja con nostros</a></li>
-                 <li><a href="Contacto.html">Colaborar</a></li>
-                 <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
-             </ul>       
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             <h4>Siguenos</h4>
-             <ul class="siguenosFooter">
-                 <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
-                 <li><a href="*"><i class="fab fa-instagram"></i></a></li>
-                 <li><a href="*"><i class="fab fa-youtube"></i></a></li>
-             </ul>
-           </section>
-         </div>
- 
-       </section>
- 
-       <section>
-         <div class="footer2">
-            <section class="BarraFondoFooter">
-             <h5>Eccolux © 2021 Todos los derechos reservados</h5>
-            </section>
-         </div>
-       </section>  
- 
-       
- 
-     </footer> 
-     <!--Fin Footer-->   
-      
+        <div class="BarraFondoFooter">
+           <a>Eccolux © 2021 Todos los derechos reservados</a>
+        </div>
+      </section>
+
+
+     </section>
+
+  </footer>
+
+
+  <!--Fin Footer-->
+
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script> 
+
     
 </body>
 

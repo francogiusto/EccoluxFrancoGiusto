@@ -246,6 +246,11 @@ body {
   transition: width 0.5s;
 }
 
+.berlinRelative{
+  position: relative;
+  top: 10;
+}
+
 .berlin:hover {
   width: 10.4%;
 }
@@ -307,93 +312,142 @@ body {
 }
 
 /*--Footer inicio--*/
-.BarraFondoFooter {
-  background-color: rgba(37, 37, 37, 0.1);
-  padding: 0.3%;
+
+
+.BarraFondoFooter{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(37, 37, 37, 0.2); 
+  padding: 0.3%;  
   text-align: center;
   width: 100%;
 }
-
-.logo {
-  height: 10vh;
+.BarraFondoFooter a{
+  font-size: 12px;
 }
 
-.footer1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.flx_foo_col{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+ 
 }
 
-.footer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.flx_just_cen{
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer__flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-color: rgba(221, 219, 219, 0.8);
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-color: rgba(37, 37, 37, 0.1);
   padding: 1rem;
 }
 
-.footer__flexContainer li {
-  margin: 5px;
-  padding: 2px;
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  font-size: 0.9rem;
+
+.logo{
+  height: 10vh;
 }
 
-.footer__flexContainer h4 {
+
+.contacto{
+  width: 22vw;
   text-align: center;
-  font-size: 1rem;
+}
+.contacto a{
+  font-size: 12px;
+  padding: 4%;
+}
+.contacto ul{
+  margin: 0%;
+  padding: 0%;
+}
+.contacto li{
+  list-style: none;
+  font-size: 10px;
+  padding: 1%;
 }
 
-.siguenosFooter {
-  text-decoration: none;
+
+
+.recursos{
+  width: 22vw;
+  text-align: center;
 }
 
-.siguenosFooter li {
+.recursos h3{
+  font-size: 22px;
+
+}
+
+.recursos a{
+  font-size: 12px;
+}
+
+.recursos ul{
+  margin: 0%;
+  padding: 0%;
+}
+
+.recursos li{ 
+  font-size: 12px;
+  list-style: none;
+  padding: 1%;
+}
+
+.recursos li a{}
+  
+
+.espacioLogo{
+  width: 12vw;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+
+.informacion{
+  width: 22vw;
+  text-align: center;
+}
+.informacion h4{
+  font-size: 23px;
+}
+.informacion ul{
+  margin: 0%;
+  padding: 0%;
+}
+.informacion li{
+  list-style: none;
+  font-size: 12px;
+  padding: 1%;
+}
+
+.siguenos{
+  width: 22vw;
+  text-align: center;
+  
+}
+.siguenos li{
   display: inline-block;
   padding-top: 1rem;
+  align-items: center;
 }
 
+
+
+
 /*--Footer fin--*/
+
+
+
 /*--Paginas Berlin inicio--*/
 .espacioMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-colr: turquoise;
-  /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 2rem;
   padding: 2rem;
+
+
 }
+
 
 .contenedor-imagen {
   width: 40%;
-  background-olor: yellowgreen;
-  /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,6 +455,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 
 .contenedor-imagen img {
   width: 28%;
@@ -408,13 +463,22 @@ body {
 
 .contenedor-info {
   width: 55%;
-  background-coor: tomato;
-  /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .item {
-  padding: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.espaciado{
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.precio{
+  font-size: 2rem;
+}
+.stock{
+  text-transform: uppercase;
 }
 
 /*--Paginas Berlin Fin--*/
@@ -453,13 +517,16 @@ body {
   background-color: #bebebe;
   border-color: #7e7e7e;
   font-family: 'Advent Pro', sans-serif, serif;
-  font-size: 1rem;
+  font-size: 1,5rem;
+  text-transform: uppercase;
   cursor: pointer;
-  padding: 0.2rem;
+  padding: 10px 20px 10px 20px;
   font-weight: 500;
   border: none;
+  width: 40%;
+  height: 2%;
 }
-
+ 
 .btnComprar:hover {
   background-color: #979696;
 }
@@ -498,9 +565,11 @@ body {
 
 /*--Paginas Sidney Fin--*/
 /*--Contacto inicio--*/
+
 .espacioFormulario {
   padding: 2rem;
-  margin: 2rem;
+  margin: 4rem;
+  background-color:  rgba(37, 37, 37, 0.1);
 }
 
 .flexFormulario {
@@ -524,7 +593,7 @@ body {
   text-decoration: none;
   font-size: 3vh;
   padding: 1rem;
-  width: 20vw;
+  width: 80vw;
 }
 
 .contacto-form__input {
@@ -610,3 +679,15 @@ body {
           justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
+
+.carousel-inner img{
+  width: auto;
+  height: 700px;
+} 
+
+.alinear{
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+} 

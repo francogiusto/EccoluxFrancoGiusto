@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eccolux</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a2d4d2f619.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,36 +15,56 @@
 
 <body class="fondo">
    
-     <!--Inicio Header-->
+      <!--Inicio Header-->
 
-     <Header class="Header">
+  <Header class="Header">
 
-      <h1 class="header__titulo">Eccolux</h1>
- 
-      <hr>
- 
-     <div>
-         <Nav>
-           <ul class="flex-container">
-              <div><li> <a href="#"></a> Productos  
-                <ul class="submenu"> 
-                  <li><a href="Berlin.html">Berlin</a></li>
-                  <li><a href="Roma.html">Roma</a> </li>
-                  <li><a href="Chicago.html">Chicago</a> </li>
-                  <li><a href="Sidney.html">Sidney</a></li>
-                  <li><a href="Barcelona.html">Barcelona</a></li>
+    <h1 class="header__titulo">Eccolux</h1>
+
+    <hr>
+
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown pe-5 me-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink bg" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Berlin.html">Berlin</a></li>
+                  <li><a class="dropdown-item" href="Roma.html">Roma</a></li>
+                  <li><a class="dropdown-item" href="Chicago.html">Chicago</a></li>
+                  <li><a class="dropdown-item" href="Barcelona.html">Barcelona</a></li>
+                  <li><a class="dropdown-item" href="Sidney.html">Sidney</a></li>
                 </ul>
-               </li></div>
-              <div><li><a href="Contacto.html">Contacto</a> </li></div>
-              <div><li><a href="index.html">Home</a> </li></div>
-              <div><li><a href="Sobre_nosotros.html">Sobre nosotros</a> </li></div>
-              <div><li><a href="Mi_compra">Compra</a></li></div>
-           </ul>
-         </Nav>
-     </div>
+              </li>
+              <li class="nav-item pe-5 me-5">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ps-5 ms-5">
+                <a class="nav-link" href="Sobre_nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item ps-5 ms-5">
+                <a class="nav-link" href="#">Compra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </Header>
 
- <!--Fin Header-->
+  <!--Fin Header-->
     
     <!--Inicio Main-->
 
@@ -84,84 +105,81 @@
       </Main>    
     <!--Fin Main-->    
 
-    <!--Inicio Footer-->
+     <!--Inicio Footer-->
 
-    <footer class="footer1">
+   <footer>
+
+    <section class="flx_foo_col">
+
+      <section class="flx_just_cen">
+
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <ul>
+              <li>
+                <a>Local Quintana 241 Mar del Plata,BsAs, Argentina</a>
+              </li>
+              <li>
+                <a>Telefono 432-2421</a>
+              </li>
+              <li>
+                <a>Email:Eccolux@gmail.com</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="recursos">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="*">Terminos de uso</a></li>
+              <li><a href="*">Ayuda</a></li>
+              <li><a href="*">Privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="espacioLogo">
+            <a href="index.html">
+              <img src="./img/LogoE.png" alt="LogoE" class="logo"></a>
+        </div>
+
+        <div class="informacion">
+            <h4>Informacion</h4>
+            <ul class="informacionFooter">
+              <li><a href="Contacto.html">Trabaja con nostros</a></li>
+              <li><a href="Contacto.html">Colaborar</a></li>
+              <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="siguenos">
+            <h4>Siguenos</h4>
+              <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="*"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="*"><i class="fab fa-youtube"></i></a></li>
+        </div>
+
+     </section>
 
       <section>
-        
-       <section class="footer__flexContainer">
- 
-        <div class="">
-           <section>
-             <h4>Contacto</h4>
-             <ul class="">
-                 <li><h5>Local Quintana 241 Mar del Plata,BsAs, Argentina</h5></li>
-                 <li><h5>Telefono 432-2421</h5></Li>
-                 <li><h5>Email:Eccolux@gmail.com</h5></li>
-             </ul>
-           </section>
-         </div> 
-       
-         <div class="">
-           <section>
-             <h4>Recursos</h4>
-             <ul class="">
-                 <li><a href="*">Terminos de uso</a></li>
-                 <li><a href="*">Ayuda</a></li>
-                 <li><a href="*">Privacidad</a></li>
-             </ul>
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             
-                 <a href="index.html">
-                 <img src="./img/LogoE.png" alt="LogoE" class="logo"></a>
-             
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             <h4>Informacion</h4>
-             <ul class="informacionFooter">
-                 <li><a href="Contacto.html">Trabaja con nostros</a></li>
-                 <li><a href="Contacto.html">Colaborar</a></li>
-                 <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
-             </ul>       
-           </section>
-         </div>
-         
-         <div class="">
-           <section>
-             <h4>Siguenos</h4>
-             <ul class="siguenosFooter">
-                 <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
-                 <li><a href="*"><i class="fab fa-instagram"></i></a></li>
-                 <li><a href="*"><i class="fab fa-youtube"></i></a></li>
-             </ul>
-           </section>
-         </div>
- 
-       </section>
- 
-       <section>
-         <div class="footer2">
-            <section class="BarraFondoFooter">
-             <h5>Eccolux © 2021 Todos los derechos reservados</h5>
-            </section>
-         </div>
-       </section>  
- 
-       
- 
-     </footer> 
-     <!--Fin Footer-->   
-  
+        <div class="BarraFondoFooter">
+           <a>Eccolux © 2021 Todos los derechos reservados</a>
+        </div>
+      </section>
 
-</body> 
+
+     </section>
+
+  </footer>
+
+
+  <!--Fin Footer-->
+
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script> 
+
 
 </html>
 
