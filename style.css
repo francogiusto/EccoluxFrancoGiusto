@@ -318,11 +318,12 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgba(37, 37, 37, 0.2); 
-  padding: 0.3%;  
+  padding-top:1% ;
   text-align: center;
   width: 100%;
 }
-.BarraFondoFooter a{
+
+.BarraFondoFooter p{
   font-size: 12px;
 }
 
@@ -350,9 +351,8 @@ body {
   width: 22vw;
   text-align: center;
 }
-.contacto a{
-  font-size: 12px;
-  padding: 4%;
+.contacto p{
+  font-size: 23px;
 }
 .contacto ul{
   margin: 0%;
@@ -363,6 +363,10 @@ body {
   font-size: 10px;
   padding: 1%;
 }
+.contacto a{
+  font-size: 12px;
+  padding: 4%;
+}
 
 
 
@@ -370,28 +374,22 @@ body {
   width: 22vw;
   text-align: center;
 }
-
-.recursos h3{
+.recursos p{
   font-size: 22px;
-
 }
-
-.recursos a{
-  font-size: 12px;
-}
-
 .recursos ul{
   margin: 0%;
   padding: 0%;
 }
-
 .recursos li{ 
   font-size: 12px;
   list-style: none;
   padding: 1%;
 }
+.recursos a{
+  font-size: 12px;
+}
 
-.recursos li a{}
   
 
 .espacioLogo{
@@ -406,7 +404,7 @@ body {
   width: 22vw;
   text-align: center;
 }
-.informacion h4{
+.informacion p{
   font-size: 23px;
 }
 .informacion ul{
@@ -419,15 +417,18 @@ body {
   padding: 1%;
 }
 
+
 .siguenos{
   width: 22vw;
   text-align: center;
-  
 }
 .siguenos li{
   display: inline-block;
   padding-top: 1rem;
   align-items: center;
+}
+.siguenos p{
+  font-size: 23px;
 }
 
 
