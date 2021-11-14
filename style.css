@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -151,8 +152,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 1rem;
   font-size: 5rem;
   text-transform: uppercase;
@@ -170,10 +171,10 @@ body {
   display: flex;
   padding: 10px;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .flex-container li, a {
@@ -229,26 +230,39 @@ body {
   overflow: hidden;
 }
 
+/*-- Responsive tablet--*/
+@media (max-width: 768px) {
+  .header__titulo {
+    font-size: 4.5rem;
+    padding-bottom: 0rem;
+  }
+}
+
+/*-- Responsive cel--*/
+@media (max-width: 360px) {
+  .header__titulo {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
 /*-- header menu fin--*/
-/*-- Ubicacion imagenes inicio--*/
+/*-- Ubicacion imagenes Index--*/
 .espacioImagenes {
-  width: 100vh;
-  height: 45vw;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
 .berlin {
   position: absolute;
   z-index: 3;
-  top: 36%;
+  top: 18%;
   left: 45%;
   width: 10%;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
-}
-
-.berlinRelative{
-  position: relative;
-  top: 10;
 }
 
 .berlin:hover {
@@ -258,7 +272,7 @@ body {
 .chicago {
   position: absolute;
   z-index: 2;
-  top: 42%;
+  top: 26%;
   left: 37%;
   width: 11.5%;
   -webkit-transition: width 0.5s;
@@ -272,7 +286,7 @@ body {
 .roma {
   position: absolute;
   z-index: 2;
-  top: 40%;
+  top: 25%;
   left: 50%;
   width: 15%;
   -webkit-transition: width 0.5s;
@@ -286,7 +300,7 @@ body {
 .sidney {
   position: absolute;
   z-index: 1;
-  top: 53%;
+  top: 40%;
   left: 56%;
   width: 15%;
   -webkit-transition: width 0.5s;
@@ -300,7 +314,7 @@ body {
 .barcelona {
   position: absolute;
   z-index: 1;
-  top: 53%;
+  top: 40%;
   left: 27%;
   width: 20%;
   -webkit-transition: width 0.5s;
@@ -311,88 +325,213 @@ body {
   width: 20.5%;
 }
 
-/*--Footer inicio--*/
+.todas {
+  display: inline-block;
+  width: 100vw;
+  height: 80vh;
+}
 
+.todas_div {
+  width: 100vw;
+  height: 80vh;
+  display: table-cell;
+  vertical-align: middle;
+}
 
-.BarraFondoFooter{
+.todas img {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .todas {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .espacioImagenes {
+    display: none;
+  }
+}
+
+/*-- Responsiv  e tablet--*/
+@media (max-width: 992px) {
+  .berlin {
+    display: none;
+  }
+  .chicago {
+    display: none;
+  }
+  .roma {
+    display: none;
+  }
+  .sidney {
+    display: none;
+  }
+  .barcelona {
+    display: none;
+  }
+}
+
+/*-- Responsive cel--*/
+/*-- Catalogo--*/
+.catalogo_img {
+  width: 40%;
+}
+
+.catalogo_img2 {
+  width: 55%;
+}
+
+.catalogo_img3 {
+  width: 65%;
+}
+
+.catalogoDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  background-color: rgba(37, 37, 37, 0.2); 
-  padding-top:1% ;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.catalogoDisplay a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalogoDisplay p {
+  font-size: 2rem;
+}
+
+.boton {
+  font-size: 1.5rem;
+}
+
+.catalogoTitulo {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+/*-- Fin Ubicacion imagenes Index--*/
+/*--Footer inicio--*/
+.BarraFondoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(37, 37, 37, 0.2);
+  padding-top: 1%;
   text-align: center;
   width: 100%;
 }
 
-.BarraFondoFooter p{
+.BarraFondoFooter p {
   font-size: 12px;
 }
 
-.flx_foo_col{
+.flx_foo_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
- 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.flx_just_cen{
+.flx_just_cen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: rgba(37, 37, 37, 0.1);
   padding: 1rem;
 }
 
-
-.logo{
+.logo {
   height: 10vh;
 }
 
-
-.contacto{
+.contacto {
   width: 22vw;
   text-align: center;
 }
-.contacto p{
+
+.contacto p {
   font-size: 23px;
 }
-.contacto ul{
+
+.contacto ul {
   margin: 0%;
   padding: 0%;
 }
-.contacto li{
+
+.contacto li {
   list-style: none;
   font-size: 10px;
   padding: 1%;
 }
-.contacto a{
+
+.contacto a {
   font-size: 12px;
   padding: 4%;
 }
 
-
-
-.recursos{
+.recursos {
   width: 22vw;
   text-align: center;
 }
-.recursos p{
+
+.recursos p {
   font-size: 22px;
 }
-.recursos ul{
+
+.recursos ul {
   margin: 0%;
   padding: 0%;
 }
-.recursos li{ 
+
+.recursos li {
   font-size: 12px;
   list-style: none;
   padding: 1%;
 }
-.recursos a{
+
+.recursos a {
   font-size: 12px;
 }
 
-  
-
-.espacioLogo{
+.espacioLogo {
   width: 12vw;
   text-align: center;
   margin-top: auto;
@@ -400,70 +539,115 @@ body {
   display: block;
 }
 
-.informacion{
+.informacion {
   width: 22vw;
   text-align: center;
 }
-.informacion p{
+
+.informacion p {
   font-size: 23px;
 }
-.informacion ul{
+
+.informacion ul {
   margin: 0%;
   padding: 0%;
 }
-.informacion li{
+
+.informacion li {
   list-style: none;
   font-size: 12px;
   padding: 1%;
 }
 
-
-.siguenos{
+.siguenos {
   width: 22vw;
   text-align: center;
 }
-.siguenos li{
+
+.siguenos li {
   display: inline-block;
   padding-top: 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.siguenos p{
+
+.siguenos p {
   font-size: 23px;
 }
 
+/*-- Responsive tablet--*/
+@media (max-width: 768px) {
+  .logo {
+    height: 8vh;
+  }
+  .contacto p {
+    font-size: 18px;
+  }
+  .contacto li {
+    font-size: 10px;
+    padding: 1%;
+  }
+  .contacto a {
+    font-size: 10px;
+    padding: 2%;
+  }
+  .recursos p {
+    font-size: 18px;
+  }
+  .recursos li {
+    font-size: 10px;
+    list-style: none;
+    padding: 1%;
+  }
+  .recursos a {
+    font-size: 10px;
+  }
+  .informacion p {
+    font-size: 18px;
+  }
+  .informacion li {
+    list-style: none;
+    font-size: 10px;
+    padding: 1%;
+  }
+  .siguenos li {
+    display: inline-block;
+    padding-top: 0.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .siguenos p {
+    font-size: 18px;
+  }
+}
 
+/*-- Responsive cel bootstrap--*/
+.list-style {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
 
+.list-style li {
+  margin: auto;
+}
+
+.fondo_footer_responsive {
+  background-color: rgba(37, 37, 37, 0.1);
+  padding: 1rem;
+}
 
 /*--Footer fin--*/
-
-
-
 /*--Paginas Berlin inicio--*/
 .espacioMain {
   margin: 2rem;
   padding: 2rem;
-
-
 }
 
-
-.contenedor-imagen {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-
-.contenedor-imagen img {
-  width: 28%;
-}
-
-.contenedor-info {
-  width: 55%;
+.tamañoTabla {
+  width: 50%;
   font-size: 1.2rem;
 }
 
@@ -471,106 +655,41 @@ body {
   padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
-.espaciado{
+.espaciado {
   margin: 2rem 0rem 2rem 0rem;
 }
 
-.precio{
+.precio {
   font-size: 2rem;
 }
-.stock{
+
+.stock {
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .infocentrada {
+    display: block;
+  }
+  .slide img {
+    height: 20vh;
+  }
 }
 
 /*--Paginas Berlin Fin--*/
 /*--Paginas Chicago inicio--*/
-.contenedor-imagen--chicago {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contenedor-imagen--chicago img {
-  width: 35%;
-}
-
 /*--Paginas Chigao Fin--*/
 /*--Paginas Barcelona inicio--*/
-.contenedor-imagen--barcelona {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contenedor-imagen--barcelona img {
-  width: 70%;
-}
-
-.btnComprar {
-  background-color: #bebebe;
-  border-color: #7e7e7e;
-  font-family: 'Advent Pro', sans-serif, serif;
-  font-size: 1,5rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 10px 20px 10px 20px;
-  font-weight: 500;
-  border: none;
-  width: 40%;
-  height: 2%;
-}
- 
-.btnComprar:hover {
-  background-color: #979696;
-}
-
 /*--Paginas Barcelona Fin--*/
 /*--Paginas Roma inicio--*/
-.contenedor-imagen--roma {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contenedor-imagen--roma img {
-  width: 50%;
-}
-
 /*--Paginas Roma Fin--*/
 /*--Paginas Sidney inicio--*/
-.contenedor-imagen--sidney {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contenedor-imagen--sidney img {
-  width: 70%;
-}
-
 /*--Paginas Sidney Fin--*/
 /*--Contacto inicio--*/
-
 .espacioFormulario {
   padding: 2rem;
   margin: 4rem;
-  background-color:  rgba(37, 37, 37, 0.1);
+  background-color: rgba(37, 37, 37, 0.1);
 }
 
 .flexFormulario {
@@ -580,8 +699,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .flexFormulario1 {
@@ -605,38 +724,6 @@ body {
   color: black;
   font-size: 1rem;
   width: 100%;
-}
-
-.btnEnviar {
-  width: 49%;
-  background-color: #bebebe;
-  border-color: #7e7e7e;
-  font-family: 'Advent Pro', sans-serif, serif;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.2rem;
-  font-weight: 500;
-  border: none;
-}
-
-.btnReset {
-  width: 49%;
-  background-color: #bebebe;
-  border-color: #7e7e7e;
-  font-family: 'Advent Pro', sans-serif, serif;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.2rem;
-  font-weight: 500;
-  border: none;
-}
-
-.btnEnviar:hover {
-  background-color: #979696;
-}
-
-.btnReset:hover {
-  background-color: #979696;
 }
 
 /*--Contacto fin--*/
@@ -672,23 +759,77 @@ body {
 /*--Sobre Nosotros fin--*/
 #contacto2 {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   justify-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-/*# sourceMappingURL=style.css.map */
-
-.carousel-inner img{
+.carousel-inner img {
   width: auto;
   height: 700px;
-} 
+}
 
-.alinear{
+.alinear {
   justify-items: center;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-} 
+}
+
+/*--Botones--*/
+.btnComprar {
+  background-color: #bebebe;
+  border-color: #7e7e7e;
+  font-family: 'Advent Pro', sans-serif, serif;
+  font-size: 1,5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  font-weight: 500;
+  border: none;
+  width: 40%;
+  height: 2%;
+}
+
+.btnComprar:hover {
+  background-color: #979696;
+}
+
+.btnEnviar {
+  width: 49%;
+  background-color: #bebebe;
+  border-color: #7e7e7e;
+  font-family: 'Advent Pro', sans-serif, serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  font-weight: 500;
+  border: none;
+}
+
+.btnReset {
+  width: 49%;
+  background-color: #bebebe;
+  border-color: #7e7e7e;
+  font-family: 'Advent Pro', sans-serif, serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  font-weight: 500;
+  border: none;
+}
+
+.btnEnviar:hover {
+  background-color: #979696;
+}
+
+.btnReset:hover {
+  background-color: #979696;
+}
+
+/*--Botones--*/
+/*# sourceMappingURL=style.css.map */

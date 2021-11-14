@@ -28,7 +28,7 @@
     <hr>
 
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent"> <!-- Nav de Bootstrap-->  
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-transparent"> <!-- Nav de Bootstrap-->  
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item dropdown pe-5 me-5">
+              <li class="nav-item dropdown pe-lg-5 me-lg-5 pe-md-1 me-md-1 mt-3">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink bg" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
@@ -49,16 +49,16 @@
                   <li><a class="dropdown-item" href="Sidney.html">Sidney</a></li>
                 </ul>
               </li>
-              <li class="nav-item pe-5 me-5">
+              <li class="nav-item pe-lg-5 me-lg-5 pe-md-1 me-md-1 mt-3">
                 <a class="nav-link" href="Contacto.html">Contacto</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mt-3">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item ps-5 ms-5">
+              <li class="nav-item ps-lg-5 ms-lg-5 ps-md-1 ms-md-1 mt-3">
                 <a class="nav-link" href="Sobre_nosotros.html">Sobre nosotros</a>
               </li>
-              <li class="nav-item ps-5 ms-5">
+              <li class="nav-item ps-lg-5 ms-lg-5 ps-md-1 ms-md-1 mt-3">
                 <a class="nav-link" href="#">Compra</a>
               </li>
             </ul>
@@ -74,34 +74,45 @@
   <!--Inicio Main-->
 
   <Main>
-    <section class="espacioImagenes">
-      <div>
-        <a href="Berlin.html">
-          <img src="./img/Berlin.png" alt="Imagen lampara modelo Berlin" class="berlin">
-        </a>
-      </div>
+    <section>
+      <div class="container espacioImagenes">
+         <div class="container-fluid">
+           <a href="Berlin.html">
+            <img src="./img/Berlin.png" alt="Imagen lampara modelo Berlin" class="berlin">
+          </a>
+         </div>
 
-      <div>
-        <a href="Roma.html">
-          <img src="./img/Roma.png" alt="Imagen lampara modelo Roma" class="roma">
-        </a>
-      </div>
+         <div class="container-fluid">
+           <a href="Roma.html">
+            <img src="./img/Roma.png" alt="Imagen lampara modelo Roma" class="roma">
+           </a>
+         </div>
 
-      <div>
+       <div class="container-fluid">
         <a href="Sidney.html">
           <img src="./img/Sidney.png" alt="Imagen lampara modelo Sidney" class="sidney">
         </a>
-      </div>
+       </div>
 
-      <div>
+       <div class="container-fluid">
         <a href="Barcelona.html">
           <img src="./img/Barcelona.png" alt="Imagen lampara modelo Barcelona" class="barcelona">
         </a>
-      </div>
+       </div>
 
-      <div">
-        <a href="Chicago.html">
-          <img src="./img/Chicago.png" alt="Imagen lampara modelo Chicago" class="chicago">
+        <div class="container-fluid">
+          <a href="Chicago.html">
+            <img src="./img/Chicago.png" alt="Imagen lampara modelo Chicago" class="chicago">
+          </a>
+        </div>
+
+     </div>
+    </section>
+
+    <section class="todas">
+      <div class="todas_div">
+        <a href="catalogo.html">
+          <img src="./img/Todas.png" alt="" class="img-fluid">
         </a>
       </div>
     </section>
@@ -109,74 +120,165 @@
 
   <!--Fin Main-->
 
-  <!--Inicio Footer-->
+    <!--Inicio Footer-->
 
-  <footer>
+    <footer>
 
-    <section class="flx_foo_col">
-
-      <section class="flx_just_cen">
-
-        <div class="contacto">
-            <p>Contacto</p>
-            <ul>
-              <li>
-                <a>Local Quintana 241 Mar del Plata,BsAs, Argentina</a>
-              </li>
-              <li>
-                <a>Telefono 432-2421</a>
-              </li>
-              <li>
-                <a>Email:Eccolux@gmail.com</a>
-              </li>
-            </ul>
-        </div>
-
-        <div class="recursos">
-            <p>Recursos</p>
-            <ul>
-              <li><a href="*">Terminos de uso</a></li>
-              <li><a href="*">Ayuda</a></li>
-              <li><a href="*">Privacidad</a></li>
-            </ul>
-        </div>
-
-        <div class="espacioLogo">
-            <a href="index.html">
-              <img src="./img/LogoE.png" alt="Logo de la marca en forma de E" class="logo"></a>
-        </div>
-
-        <div class="informacion">
-            <p>Informacion</p>
-            <ul class="informacionFooter">
-              <li><a href="Contacto.html">Trabaja con nostros</a></li>
-              <li><a href="Contacto.html">Colaborar</a></li>
-              <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
-            </ul>
-        </div>
-
-        <div class="siguenos">
-            <p>Siguenos</p>
-              <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="*"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="*"><i class="fab fa-youtube"></i></a></li>
-        </div>
-
-     </section>
-
-      <section>
-        <div class="BarraFondoFooter">
-           <p>Eccolux © 2021 Todos los derechos reservados</p>
-        </div>
-      </section>
-
-
-     </section>
-
-  </footer>
-
-
-  <!--Fin Footer-->
+      <section class="flx_foo_col">
+  
+        <div class="d-none d-sm-block">
+  
+        <section class="flx_just_cen">
+          
+          <div class="contacto d-none d-sm-block">
+              <p>Contacto</p>
+              <ul>
+                <li>
+                  <a>Local Quintana 241 Mar del Plata,BsAs, Argentina</a>
+                </li>
+                <li>
+                  <a>Telefono 432-2421</a>
+                </li>
+                <li>
+                  <a>Email:Eccolux@gmail.com</a>
+                </li>
+              </ul>
+          </div>
+  
+          <div class="recursos  d-none d-sm-block">
+              <p>Recursos</p>
+              <ul>
+                <li><a href="*">Terminos de uso</a></li>
+                <li><a href="*">Ayuda</a></li>
+                <li><a href="*">Privacidad</a></li>
+              </ul>
+          </div>
+  
+          <div class="espacioLogo  d-none d-sm-block">
+              <a href="index.html">
+                <img src="./img/LogoE.png" alt="Logo de la marca en forma de E" class="logo"></a>
+          </div>
+  
+          <div class="informacion  d-none d-sm-block">
+              <p>Informacion</p>
+              <ul class="informacionFooter">
+                <li><a href="Contacto.html">Trabaja con nostros</a></li>
+                <li><a href="Contacto.html">Colaborar</a></li>
+                <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+              </ul>
+          </div>
+  
+          <div class="siguenos  d-none d-sm-block">
+              <p>Siguenos</p>
+                <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="*"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="*"><i class="fab fa-youtube"></i></a></li>
+          </div>
+  
+       </section>
+  
+      </div>
+  
+   <!--Inicio Footer Celular-->
+  
+       <section class="fondo_footer_responsive">
+         
+        <div class="d-sm-none">
+          <p class="m-1">
+            <button class="btn btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+             Contacto
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body bg-transparent text-center">
+              <ul class="list-style">
+                <li>
+                  <a>Local Quintana 241 Mar del Plata,BsAs, Argentina</a>
+                </li>
+                <li>
+                  <a>Telefono 432-2421</a>
+                </li>
+                <li>
+                  <a>Email:Eccolux@gmail.com</a>
+                </li>
+              </ul> 
+            </div>    
+          </div>
+         </div>
+  
+         <div class="d-sm-none">
+          <p class="m-1">
+            <button class="btn btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#colapso1" aria-expanded="false" aria-controls="collapseExample">
+             Recursos
+            </button>
+          </p>
+          <div class="collapse" id="colapso1">
+            <div class="card card-body bg-transparent text-center">
+              <ul class="list-style">
+                <li>
+                  <a>Terminos de uso</a>
+                </li>
+                <li>
+                  <a>Ayuda</a>
+                </li>
+                <li>
+                  <a>Privacidad</a>
+                </li>
+              </ul> 
+            </div>    
+          </div>
+         </div>
+  
+         <div class="d-sm-none">
+          <p class="m-1">
+            <button class="btn btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#colapso3" aria-expanded="false" aria-controls="collapseExample">
+             Informacion
+            </button>
+          </p>
+          <div class="collapse" id="colapso3">
+            <div class="card card-body bg-transparent text-center">
+              <ul class="list-style">
+                <li><a href="Contacto.html">Trabaja con nostros</a></li>
+                <li><a href="Contacto.html">Colaborar</a></li>
+                <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+              </ul>
+            </div>    
+          </div>
+         </div>
+  
+         <div class="d-sm-none">
+          <p class="m-1">
+            <button class="btn btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#colapso4" aria-expanded="false" aria-controls="collapseExample">
+             Siguenos
+            </button>
+          </p>
+          <div class="collapse" id="colapso4">
+            <div class="card card-body bg-transparent text-center">
+              <ul class="list-style d-inline-flex">
+                <li><a href="*"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="*"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="*"><i class="fab fa-youtube"></i></a></li>
+              </ul> 
+            </div>    
+          </div>
+         </div>
+    
+       </section>
+  
+        <!--Fin Footer Celular-->
+  
+        <section>
+          <div class="BarraFondoFooter">
+             <p>Eccolux © 2021 Todos los derechos reservados</p>
+          </div>
+        </section>
+        
+       </section>
+  
+    </footer>
+  
+  
+    <!--Fin Footer-->
 
 </body>
 

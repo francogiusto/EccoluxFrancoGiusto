@@ -1,0 +1,181 @@
+.espacioImagenes {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+
+  }
+  
+  .berlin {
+    position: absolute;
+    z-index: 3;
+    top: 18%;
+    left: 45%;
+    width: 10%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  
+  .berlin:hover {
+    width: 10.4%;
+  }
+  
+  .chicago {
+    position: absolute;
+    z-index: 2;
+    top: 26%;
+    left: 37%;
+    width: 11.5%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  .chicago:hover {
+    width: 12%;
+  }
+  
+  .roma {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    width: 15%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  .roma:hover {
+    width: 15.5%;
+  }
+  
+  .sidney {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 56%;
+    width: 15%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  .sidney:hover {
+    width: 15.5%;
+  }
+  
+  .barcelona {
+    position: absolute; 
+    z-index: 1;
+    top: 40%;
+    left: 27%;
+    width: 20%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  .barcelona:hover {
+    width: 20.5%;
+  }
+
+  .todas{
+    display:inline-block;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .todas_div{
+    width: 100vw;
+    height: 80vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+  .todas img{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+  @media(min-width:992px){
+    .todas{
+      display: none;
+    }
+  }
+
+  @media(max-width:992px){
+    .espacioImagenes {
+     display: none;}
+  }
+
+  /*-- Responsiv  e tablet--*/
+
+          @media(max-width: 992px){
+            .berlin {
+                display: none;
+              }         
+              .chicago {
+                display: none;
+              }
+              .roma {
+                display: none;
+              }
+              .sidney {
+                display: none;
+              }
+              .barcelona {
+                display: none;
+               } 
+          }
+          
+
+     /*-- Responsive cel--*/
+
+
+      /*-- Catalogo--*/
+
+
+
+  .catalogo_img{
+    width: 40%;
+  }
+
+  .catalogo_img2{
+    width: 55%;
+  }
+
+  .catalogo_img3{
+    width: 65%;
+  }
+  .catalogoDisplay{
+    display: flex;
+    flex-direction: column ;
+    align-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 3rem;
+  }
+
+  .catalogoDisplay a{
+    display: flex;
+    flex-direction: column ;
+    flex-direction: column ;
+    align-content: center;
+    align-items: center;
+  }
+
+  .catalogoDisplay p{
+    font-size: 2rem;
+  }
+
+  .boton{
+    font-size: 1.5rem;
+  }
+
+  .catalogoTitulo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }

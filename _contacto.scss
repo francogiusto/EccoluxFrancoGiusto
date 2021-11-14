@@ -1,0 +1,40 @@
+.espacioFormulario {
+    padding: 2rem;
+    margin: 4rem;
+    background-color:  rgba(37, 37, 37, 0.1);
+  }
+  
+  .flexFormulario {
+    margin: 1rem;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .flexFormulario1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .formulario {
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 1rem;
+    width: 80vw;
+  }
+  
+  .contacto-form__input {
+    margin-bottom: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5rem;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    width: 100%;
+  }
+  

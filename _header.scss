@@ -1,62 +1,103 @@
-.flex-container{
+.header__titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: lighter;
+  }
+  
+  /*-- header titulo fin--*/
+  /*-- header menu inicio--*/
+  .flex-container {
     margin-left: 20vh;
     margin-right: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 10px;
-    flex-wrap: nowrap;
-    justify-content:space-evenly
-}    
-
-.flex-container li,a    {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  .flex-container li, a {
     margin: 5px;
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    color: black; 
-   
-}
-
-.menuSuperior{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align:center;
-    overflow: hidden;
-    padding-top: 3vh;
-    list-style: none;
-}
-
-.menuSuperior li{
-    display: inline-block;
-    width: 13%;
-    position: relative;
-}
-
-.submenu{
-    position: absolute;
-    display: none;
-}
-
-.submenu li{
-    display: block;
-}
-
-.menuSuperior li:hover .submenu{
-    display: block;
-}
-
-.header__navbar--principal{
-    padding: 10vh;
-    list-style: none;
-}
-
-.header__navbar--principal li{
-    display: inline-block;
-}
-
-.header__navbar--principal a{
+    color: black;
+  }
+  
+  .menuSuperior {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     overflow: hidden;
-}
+    padding-top: 3vh;
+    list-style: none;
+  }
+  
+  .menuSuperior li {
+    display: inline-block;
+    width: 13%;
+    position: relative;
+  }
+  
+  .submenu {
+    position: absolute;
+    display: none;
+  }
+  
+  .submenu li {
+    display: block;
+  }
+  
+  .menuSuperior li:hover .submenu {
+    display: block;
+  }
+  
+  .header__navbar--principal {
+    padding: 10vh;
+    list-style: none;
+  }
+  
+  .header__navbar--principal li {
+    display: inline-block;
+  }
+  
+  .header__navbar--principal a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+  }
+
+        /*-- Responsive tablet--*/
+
+        @media(max-width: 768px){
+          .header__titulo{
+            font-size: 4.5rem;
+            padding-bottom: 0rem;
+          }
+        }
+        
+  
+       /*-- Responsive cel--*/
+  
+       @media(max-width: 360px){
+        .header__titulo{
+          font-size: 3rem;
+          margin-bottom: 0rem;
+          padding-bottom: 0rem;
+        }
+
+      }
