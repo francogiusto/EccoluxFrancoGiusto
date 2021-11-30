@@ -8,16 +8,10 @@
     padding: 10px 20px 10px 20px;
     font-weight: 500;
     border: none;
-    width: 40%;
-    height: 2%;
   }
    
-  .btnComprar:hover {
-    background-color: #979696;
-  }
-
   .btnEnviar {
-    width: 49%;
+    width: 48%;
     background-color: #bebebe;
     border-color: #7e7e7e;
     font-family: 'Advent Pro', sans-serif, serif;
@@ -29,7 +23,7 @@
   }
   
   .btnReset {
-    width: 49%;
+    width: 48%;
     background-color: #bebebe;
     border-color: #7e7e7e;
     font-family: 'Advent Pro', sans-serif, serif;
@@ -38,6 +32,11 @@
     padding: 0.2rem;
     font-weight: 500;
     border: none;
+
+  }
+
+  .btnComprar:hover {
+    background-color: #979696;
   }
   
   .btnEnviar:hover {

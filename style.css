@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-/*--SASS inicio--*/
+/*--Amento p y m de bootstrap--*/
 .p-1 {
   padding: 1rem;
 }
@@ -127,7 +127,7 @@
   margin: 15rem;
 }
 
-/*--SASS fin--*/
+/*--Amento p y m de bootstrap fin--*/
 hr {
   height: 0.05rem;
   width: 62%;
@@ -146,8 +146,8 @@ body {
   font-family: 'Advent Pro', sans-serif;
 }
 
-/*-- header titulo inicio--*/
-.header__titulo {
+/*-- header inicio--*/
+h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,22 +161,6 @@ body {
   font-weight: lighter;
 }
 
-/*-- header titulo fin--*/
-/*-- header menu inicio--*/
-.flex-container {
-  margin-left: 20vh;
-  margin-right: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
 .flex-container li, a {
   margin: 5px;
   padding: 10px;
@@ -186,69 +170,41 @@ body {
   color: black;
 }
 
-.menuSuperior {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  overflow: hidden;
-  padding-top: 3vh;
-  list-style: none;
-}
-
-.menuSuperior li {
-  display: inline-block;
-  width: 13%;
-  position: relative;
-}
-
-.submenu {
-  position: absolute;
-  display: none;
-}
-
-.submenu li {
-  display: block;
-}
-
-.menuSuperior li:hover .submenu {
-  display: block;
-}
-
-.header__navbar--principal {
-  padding: 10vh;
-  list-style: none;
-}
-
-.header__navbar--principal li {
-  display: inline-block;
-}
-
-.header__navbar--principal a {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  overflow: hidden;
-}
-
-/*-- Responsive tablet--*/
+/*-- Responsive*/
 @media (max-width: 768px) {
-  .header__titulo {
+  h1 {
     font-size: 4.5rem;
     padding-bottom: 0rem;
   }
 }
 
-/*-- Responsive cel--*/
 @media (max-width: 360px) {
-  .header__titulo {
+  h1 {
     font-size: 3rem;
     margin-bottom: 0rem;
     padding-bottom: 0rem;
   }
 }
 
-/*-- header menu fin--*/
-/*-- Ubicacion imagenes Index--*/
+@media (max-width: 576px) {
+  .navResponsive {
+    position: absolute;
+  }
+  .navResponsive_fondo {
+    background-color: rgba(37, 37, 37, 0.5);
+    padding-right: 2%;
+  }
+  .navResponsive_font {
+    color: white;
+  }
+  .text-white1 {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  }
+}
+
+/*-- header fin--*/
+/*-- Index inicio--*/
 .espacioImagenes {
   width: 100vw;
   height: 80vh;
@@ -325,17 +281,11 @@ body {
   width: 20.5%;
 }
 
+/*-- Index Celular--*/
 .todas {
   display: inline-block;
   width: 100vw;
   height: 80vh;
-}
-
-.todas_div {
-  width: 100vw;
-  height: 80vh;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .todas img {
@@ -345,19 +295,14 @@ body {
   margin-right: auto;
 }
 
-@media (min-width: 992px) {
-  .todas {
-    display: none;
-  }
+.todas_div {
+  width: 100vw;
+  height: 80vh;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-@media (max-width: 992px) {
-  .espacioImagenes {
-    display: none;
-  }
-}
-
-/*-- Responsiv  e tablet--*/
+/*-- Responsive--*/
 @media (max-width: 992px) {
   .berlin {
     display: none;
@@ -374,9 +319,17 @@ body {
   .barcelona {
     display: none;
   }
+  .espacioImagenes {
+    display: none;
+  }
 }
 
-/*-- Responsive cel--*/
+@media (min-width: 992px) {
+  .todas {
+    display: none;
+  }
+}
+
 /*-- Catalogo--*/
 .catalogo_img {
   width: 40%;
@@ -415,7 +368,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -437,7 +389,7 @@ body {
   padding-bottom: 2rem;
 }
 
-/*-- Fin Ubicacion imagenes Index--*/
+/*-- Index fin--*/
 /*--Footer inicio--*/
 .BarraFondoFooter {
   display: -webkit-box;
@@ -584,29 +536,29 @@ body {
   .contacto p {
     font-size: 18px;
   }
-  .contacto li {
+  .contacto p li {
     font-size: 10px;
     padding: 1%;
   }
-  .contacto a {
+  .contacto p a {
     font-size: 10px;
     padding: 2%;
   }
   .recursos p {
     font-size: 18px;
   }
-  .recursos li {
+  .recursos p li {
     font-size: 10px;
     list-style: none;
     padding: 1%;
   }
-  .recursos a {
+  .recursos p a {
     font-size: 10px;
   }
   .informacion p {
     font-size: 18px;
   }
-  .informacion li {
+  .informacion p li {
     list-style: none;
     font-size: 10px;
     padding: 1%;
@@ -618,7 +570,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .siguenos p {
+  .siguenos li p {
     font-size: 18px;
   }
 }
@@ -640,14 +592,14 @@ body {
 }
 
 /*--Footer fin--*/
-/*--Paginas Berlin inicio--*/
+/*--Paginas de productos inicio--*/
 .espacioMain {
   margin: 2rem;
   padding: 2rem;
 }
 
 .tamañoTabla {
-  width: 50%;
+  width: 15rem;
   font-size: 1.2rem;
 }
 
@@ -667,105 +619,10 @@ body {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .infocentrada {
-    display: block;
-  }
-  .slide img {
-    height: 20vh;
-  }
-}
-
-/*--Paginas Berlin Fin--*/
-/*--Paginas Chicago inicio--*/
-/*--Paginas Chigao Fin--*/
-/*--Paginas Barcelona inicio--*/
-/*--Paginas Barcelona Fin--*/
-/*--Paginas Roma inicio--*/
-/*--Paginas Roma Fin--*/
-/*--Paginas Sidney inicio--*/
-/*--Paginas Sidney Fin--*/
-/*--Contacto inicio--*/
-.espacioFormulario {
-  padding: 2rem;
-  margin: 4rem;
-  background-color: rgba(37, 37, 37, 0.1);
-}
-
-.flexFormulario {
-  margin: 1rem;
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.flexFormulario1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.formulario {
-  text-decoration: none;
-  font-size: 3vh;
-  padding: 1rem;
-  width: 80vw;
-}
-
-.contacto-form__input {
-  margin-bottom: 1rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 0.5rem;
-  border: none;
-  color: black;
-  font-size: 1rem;
-  width: 100%;
-}
-
-/*--Contacto fin--*/
-/*--Sobre Nosotros inicio--*/
-.sobreNosotros {
-  text-decoration: none;
-  font-size: 3vh;
-  padding: 4rem;
-  margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.sobreNosotros p {
+.texto {
   text-align: justify;
 }
 
-.sobreNosotros h2 {
-  padding-bottom: 3rem;
-  text-align: left;
-}
-
-.sobreNosotros img {
-  padding: 1rem;
-}
-
-/*--Sobre Nosotros fin--*/
-#contacto2 {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
 .carousel-inner img {
   width: auto;
   height: 700px;
@@ -780,6 +637,167 @@ body {
   margin: auto;
 }
 
+@media (max-width: 576px) {
+  .infocentrada {
+    display: block;
+  }
+  .slide img {
+    height: 20vh;
+  }
+  .displayOculto2 {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .displayOculto {
+    display: none;
+  }
+}
+
+/*--Paginas de productos fin--*/
+/*--Contacto inicio--*/
+.espacioFormulario {
+  padding: 2rem;
+  margin: 4rem;
+  background-color: rgba(37, 37, 37, 0.1);
+}
+
+.formulario {
+  margin: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.formulario legend {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 5vh;
+}
+
+.formulario fieldset {
+  text-decoration: none;
+  font-size: 3vh;
+  padding: 1rem;
+  width: 80vw;
+}
+
+.formulario input, .formulario textarea {
+  margin-bottom: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0.5rem;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .espacioFormulario {
+    padding: 0.5rem;
+    margin: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .formulario {
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+}
+
+/*--Contacto fin--*/
+/*--Sobre Nosotros inicio--*/
+.sobreNosotros {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 4rem;
+  margin: 1rem;
+}
+
+.sobreNosotros h2 {
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.sobreNosotros p {
+  text-align: justify;
+}
+
+.sobreNosotros img {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.sobreNosotros-imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.sobreNosotros-imagenes_divisiones {
+  font-size: 1.1rem;
+}
+
+.sobreNosotros-imagenes_divisiones img {
+  width: 60%;
+}
+
+.sobreNosotros-imagenes_texto {
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.sobreNosotros-equipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sobreNosotros-equipo img {
+  width: 13vw;
+}
+
+.fondoCascada {
+  background-color: rgba(37, 37, 37, 0.09);
+}
+
+.subtituloNosotros {
+  font-size: 5vh;
+}
+
+@media (max-width: 576px) {
+  .sobreNosotros {
+    padding: 1rem;
+    margin: 1rem;
+    padding-top: 5rem;
+  }
+  .sobreNosotros p {
+    padding: 0;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/*--Sobre Nosotros fin--*/
 /*--Botones--*/
 .btnComprar {
   background-color: #bebebe;
@@ -791,16 +809,10 @@ body {
   padding: 10px 20px 10px 20px;
   font-weight: 500;
   border: none;
-  width: 40%;
-  height: 2%;
-}
-
-.btnComprar:hover {
-  background-color: #979696;
 }
 
 .btnEnviar {
-  width: 49%;
+  width: 48%;
   background-color: #bebebe;
   border-color: #7e7e7e;
   font-family: 'Advent Pro', sans-serif, serif;
@@ -812,7 +824,7 @@ body {
 }
 
 .btnReset {
-  width: 49%;
+  width: 48%;
   background-color: #bebebe;
   border-color: #7e7e7e;
   font-family: 'Advent Pro', sans-serif, serif;
@@ -821,6 +833,10 @@ body {
   padding: 0.2rem;
   font-weight: 500;
   border: none;
+}
+
+.btnComprar:hover {
+  background-color: #979696;
 }
 
 .btnEnviar:hover {
@@ -832,4 +848,77 @@ body {
 }
 
 /*--Botones--*/
+/*--Compra inicio--*/
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+.table th, .table td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.clienteCorreo {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  .table {
+    border: 0px;
+  }
+  .table tr {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #ddd;
+    display: block;
+  }
+  .table th, .table td {
+    font-size: 15px;
+  }
+  .table td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  .table thead {
+    display: none;
+  }
+  .table td:last-child {
+    border-bottom: 0px;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+  .pbBoton {
+    padding-bottom: 1rem;
+  }
+}
+
+/*--Compra fin--*/
 /*# sourceMappingURL=style.css.map */

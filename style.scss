@@ -1,9 +1,10 @@
 *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;}
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  }
 
-     /*--SASS inicio--*/
+     /*--Amento p y m de bootstrap--*/
      @for $i from 1 through 15{
          .p-#{$i} { padding: 1rem * $i; }
      }
@@ -11,7 +12,7 @@
      @for $i from 1 through 15{
         .p-#{$i} { margin: 1rem * $i; }
     }
-     /*--SASS fin--*/ 
+     /*--Amento p y m de bootstrap fin--*/ 
     
      hr {
         height: 0.05rem;
@@ -31,17 +32,17 @@
         font-family: 'Advent Pro', sans-serif;
       }
       
-      /*-- header titulo inicio--*/
+      /*-- header inicio--*/
       
       @import "./header";
       
-      /*-- header menu fin--*/
+      /*-- header fin--*/
 
-      /*-- Ubicacion imagenes Index--*/
+      /*-- Index inicio--*/
       
       @import "./mainIndex";
 
-      /*-- Fin Ubicacion imagenes Index--*/
+      /*-- Index fin--*/
       
       /*--Footer inicio--*/
       
@@ -49,93 +50,34 @@
       
       /*--Footer fin--*/
       
-      /*--Paginas Berlin inicio--*/
+      /*--Paginas de productos inicio--*/
       .espacioMain {
         margin: 2rem;
         padding: 2rem;
       }
-      
-
-    
-  
-      
-      
       .tamañoTabla {
-        width: 50%;
+        width: 15rem;
         font-size: 1.2rem;
       }
-      
       .item {
         padding: 0.5rem 0rem 0.5rem 0rem;
       }
-      
       .espaciado{
         margin: 2rem 0rem 2rem 0rem;
       }
-      
       .precio{
         font-size: 2rem;
       }
       .stock{
         text-transform: uppercase;
       }
-
-
-
-      @media(max-width: 768px){
-        .infocentrada{
-          display: block
-        }
-        .slide img{
-            height: 20vh;
-        }
+      .texto{
+        text-align: justify;
       }
-
-      
-      /*--Paginas Berlin Fin--*/
-
-      /*--Paginas Chicago inicio--*/
-      
-      /*--Paginas Chigao Fin--*/
-
-      /*--Paginas Barcelona inicio--*/
-      
-      /*--Paginas Barcelona Fin--*/
-
-      /*--Paginas Roma inicio--*/
-
-      /*--Paginas Roma Fin--*/
-
-      /*--Paginas Sidney inicio--*/
-
-      /*--Paginas Sidney Fin--*/
-
-      /*--Contacto inicio--*/
-      
-      @import "./contacto";
-
-      /*--Contacto fin--*/
-      /*--Sobre Nosotros inicio--*/
-
-      @import "./sobreNosotros";
- 
-      /*--Sobre Nosotros fin--*/
-      #contacto2 {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        justify-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-      }
-      /*# sourceMappingURL=style.css.map */
-      
       .carousel-inner img{
         width: auto;
         height: 700px;
       } 
-      
       .alinear{
         justify-items: center;
         text-align: center;
@@ -143,6 +85,42 @@
         margin: auto;
       } 
 
+
+      @media(max-width: 576px){
+        .infocentrada{
+          display: block
+        }
+        .slide img{
+            height: 20vh;
+        }
+        .displayOculto2{
+          display: none
+        } 
+      } 
+      @media(min-width: 576px){
+        .displayOculto{
+          display: none
+        }
+      }
+      
+      /*--Paginas de productos fin--*/
+
+      /*--Contacto inicio--*/
+      
+      @import "./contacto";
+
+      /*--Contacto fin--*/
+
+      /*--Sobre Nosotros inicio--*/
+
+      @import "./sobreNosotros";
+ 
+      /*--Sobre Nosotros fin--*/
+
     /*--Botones--*/
     @import "./botones";
     /*--Botones--*/
+
+    /*--Compra inicio--*/
+    @import "./compra";
+    /*--Compra fin--*/

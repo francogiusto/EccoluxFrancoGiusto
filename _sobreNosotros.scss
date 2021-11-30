@@ -1,20 +1,70 @@
 .sobreNosotros{
-    text-decoration: none;
-    font-size: 3vh;
+    box-sizing: border-box; 
+    font-size: 1.2rem;
     padding: 4rem;
     margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    h2{
+        padding-bottom: 3rem;
+        text-align: center;
+        font-size: 5vh;
+    }
     p{
     text-align: justify;
     }
-    h2{
-    padding-bottom: 3rem;
-    text-align: left;
-    }
     img{
-    padding: 1rem;
+    clip-path: circle();
     }
 } 
 
+.sobreNosotros-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.sobreNosotros-imagenes_divisiones{
+    font-size: 1.1rem;
+    img{
+    width: 60%;
+    }
+}
+
+.sobreNosotros-imagenes_texto{
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.sobreNosotros-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+    img{
+    width: 13vw;   
+    }
+}
+
+.fondoCascada{
+    background-color: rgba(37, 37, 37, 0.09);
+}
+
+.subtituloNosotros{
+    font-size: 4vh;
+}
+
+@media(max-width: 576px){
+    .sobreNosotros{
+     padding: 1rem;
+     margin: 1rem;
+     padding-top: 5rem;
+     p{
+     padding: 0;
+     margin: 1rem;
+    font-size: 1rem;
+    }
+}
+}

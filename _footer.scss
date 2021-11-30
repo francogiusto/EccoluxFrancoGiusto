@@ -1,4 +1,3 @@
- 
       .BarraFondoFooter{
         display: flex;
         justify-content: center;
@@ -6,16 +5,14 @@
         padding-top:1% ;
         text-align: center;
         width: 100%;
-      }
-      
-      .BarraFondoFooter p{
+        p{
         font-size: 12px;
+        }
       }
       
       .flx_foo_col{
         display: flex;
         flex-direction: column;
-       
       }
       
       .flx_just_cen{
@@ -33,44 +30,44 @@
       .contacto{
         width: 22vw;
         text-align: center;
-      }
-      .contacto p{
+        p{
         font-size: 23px;
-      }
-      .contacto ul{
+        }
+        ul{
         margin: 0%;
         padding: 0%;
-      }
-      .contacto li{
+        }
+        li{
         list-style: none;
         font-size: 10px;
         padding: 1%;
-      }
-      .contacto a{
+        }
+        a{
         font-size: 12px;
         padding: 4%;
+        }      
       }
-       
+
       .recursos{
         width: 22vw;
         text-align: center;
-      }
-      .recursos p{
+        p{
         font-size: 22px;
-      }
-      .recursos ul{
+        }
+        ul{
         margin: 0%;
         padding: 0%;
-      }
-      .recursos li{ 
+        }
+        li{
         font-size: 12px;
         list-style: none;
         padding: 1%;
-      }
-      .recursos a{
+        }
+        a{
         font-size: 12px;
+        }
       }
-      
+
       .espacioLogo{
         width: 12vw;
         text-align: center;
@@ -82,33 +79,33 @@
       .informacion{
         width: 22vw;
         text-align: center;
-      }
-      .informacion p{
+        p{
         font-size: 23px;
-      }
-      .informacion ul{
+        }
+        ul{
         margin: 0%;
         padding: 0%;
-      }
-      .informacion li{
+        }
+        li{
         list-style: none;
         font-size: 12px;
         padding: 1%;
+        }
       }
-        
+  
       .siguenos{
         width: 22vw;
         text-align: center;
-      }
-      .siguenos li{
+        li{
         display: inline-block;
         padding-top: 1rem;
         align-items: center;
-      }
-      .siguenos p{
+        }
+        p{
         font-size: 23px;
+        }
       }
-     
+
       
       /*-- Responsive tablet--*/
 
@@ -118,43 +115,42 @@
         }
         .contacto p{
           font-size: 18px;
-        }
-        .contacto li{
+          li{
           font-size: 10px;
           padding: 1%;
-        }
-        .contacto a{
+          }
+          a{
           font-size: 10px;
           padding: 2%;
+          }
         }
         .recursos p{
           font-size: 18px;
-        }
-        .recursos li{ 
+          li{
           font-size: 10px;
           list-style: none;
           padding: 1%;
-        }
-        .recursos a{
+          }
+          a{
           font-size: 10px;
+          }
         }
         .informacion p{
           font-size: 18px;
-        }
-        .informacion li{
+          li{
           list-style: none;
           font-size: 10px;
           padding: 1%;
+          }
         }
         .siguenos li{
           display: inline-block;
           padding-top: 0.2rem;
           align-items: center;
-        }
-        .siguenos p{
+          p{
           font-size: 18px;
+          }
         }
-
       }
       
 
@@ -173,4 +169,4 @@
 .fondo_footer_responsive{
   background-color: rgba(37, 37, 37, 0.1);
   padding: 1rem;
-}
+} 

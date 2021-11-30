@@ -1,0 +1,65 @@
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    }
+    th, td{
+    font-size: 16px;
+    padding: 8px; 
+    text-align: center;
+    }
+    thead th{
+        text-transform: uppercase;
+        background-color: #ddd;
+    }
+    tbody tr:hover{
+        background-color: rgba(0, 0, 0, 0.2)    
+    }
+    tbody td:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.clienteCorreo{
+    font-size: 1.2rem;
+}
+
+@media(max-width: 576px) {
+    .table {
+        border: 0px;
+    tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    th, td{
+        font-size: 15px;
+    }
+    td{
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    thead {
+        display: none;
+    }
+    td:last-child {
+        border-bottom: 0px;
+    }
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+    }
+    .pbBoton{
+        padding-bottom: 1rem;
+    }
+}
